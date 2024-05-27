@@ -1,3 +1,4 @@
+// Importa a biblioteca que permite o uso das variaveis do arquivo .env
 require('dotenv').config()
 
 // O segundo parenteses serve para chamar a funcao express()
@@ -12,10 +13,11 @@ const connection = mysql.createConnection({
     host: process.env.DB_HOST,
     user: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
-    database: process.env.DB_name
+    database: process.env.DB_NAME
 })
 
 connection.connect((err) => {
+    
     if(!err){
         console.log('conexão realizada com sucesso')
     }else{
@@ -35,5 +37,5 @@ app.get('/categorias', (req, res) => {
     })
 })
 
-app.listen(process.env.PORT)
+app.listen(process.env.SERVER_HOST)
 
