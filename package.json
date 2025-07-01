@@ -1,7 +1,7 @@
 {
   "name": "api",
   "version": "1.0.0",
-  "description": "uma api basica com nodejs",
+  "description": "api com nodejs para o aplicativo de gestão de tarefas",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,8 +10,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.20.2",
+    "braces": "^3.0.3",
+    "cors": "^2.8.5",
     "dotenv": "^16.4.5",
+    "dotenv-safe": "^9.1.0",
     "express": "^4.18.3",
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
+    "jsonwebtoken": "^9.0.2",
     "mysql2": "^3.9.2"
   },
   "devDependencies": {
